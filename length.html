@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Length converter</title>
+</head>
+<body>
+  <div class="container">
+
+    <form >
+      <div class="form-group">
+        <nav class="navbar navbar-light bg-dark mt-3">
+      <span class="navbar-brand mb-0 h1 text-white">Select Length Type:</span>
+    </nav>
+        <select id="selector" class="custom-select" name="selector" onchange="getSelectValue();">
+          <option value="Inchies">Inchies</option>
+          <option value="Feet">Feet</option>
+          <option value="Miles">Miles</option>
+          <option value="Kilometer">Kilometer</option>
+          <option value="Meter">Meter</option>
+          <option value="Centimeter">Centimeter</option>
+          <option value="Milimeter">Milimeter</option>
+         </select>
+    </div>
+
+    <div class="form-group">
+      <nav class="navbar navbar-light bg-dark mt-3">
+    <span class="navbar-brand mb-0 h1 text-white">Selected length type value:</span>
+  </nav>
+    <input id="inputs" type="number" name="inputs" class="form-control"  placeholder="Enter value...">
+    </div>
+  </form>
+
+
+
+
+<div class="bg-dark text-white p-3 border-bottom">
+  <div class="font-weight-bold">Inchies</div>
+  <div id="inch"></div>
+  </div>
+
+  <div class="bg-dark text-white p-3 border-bottom">
+  <div class="font-weight-bold">Feet</div>
+  <div id="feet"></div>
+  </div>
+
+  <div class="bg-dark text-white p-3 border-bottom">
+  <div class="font-weight-bold">Miles</div>
+  <div id="mile"></div>
+</div>
+
+<div class="bg-dark text-white p-3 border-bottom">
+<div class="font-weight-bold">Kilometer</div>
+<div id="kilo"></div>
+</div>
+
+<div class="bg-dark text-white p-3 border-bottom">
+<div class="font-weight-bold">Meter</div>
+<div id="meter"></div>
+</div>
+
+<div class="bg-dark text-white p-3 border-bottom">
+<div class="font-weight-bold">Centimeter</div>
+<div id="centi"></div>
+</div>
+
+<div class="bg-dark text-white  p-3 border-bottom">
+<div class="font-weight-bold">Milimeter</div>
+<div id="mili"></div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="length.js">
+</script>
+</body>
+</html>

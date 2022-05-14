@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Volume converter</title>
+</head>
+<body>
+  <div class="container">
+    <div class="mb-5 bg-dark" >
+      <h3 class=" text-white text-center">Width</h3>
+    <form >
+       <div class="form-group">
+        <nav class="navbar navbar-light bg-dark mt-3">
+      <span class="navbar-brand mb-0 h1 text-white">Foot Value:</span>
+      </nav>
+      <input id="inputs" type="number" name="inputs" onchange="iputsfuc()" class="form-control"  placeholder="Enter Width Foot value...">
+     </div>
+
+      <div class="form-group">
+        <nav class="navbar navbar-light bg-dark mt-3">
+      <span class="navbar-brand mb-0 h1 text-white">And Inchie Value:</span>
+      </nav>
+      <input id="inputs1" type="number" name="inputs1" onchange="iputs1fuc()" class="form-control" placeholder="Enter Width Inchie value...">
+      </div>
+    </form>
+  </div>
+
+  <div class=" bg-dark mb-5" >
+  <h3 class=" text-white text-center">Length</h3>
+  <form>
+    <div class="form-group">
+      <nav class="navbar navbar-light bg-dark mt-3">
+    <span class="navbar-brand mb-0 h1 text-white">Foot Value:</span>
+    </nav>
+    <input id="inputs2" type="number" name="inputs2" onchange="iputs2fuc()" class="form-control"  placeholder="Enter Length Foot value...">
+  </div>
+
+  <div class="form-group">
+    <nav class="navbar navbar-light bg-dark mt-3">
+  <span class="navbar-brand mb-0 h1 text-white">And Inchie Value:</span>
+  </nav>
+  <input id="inputs3" type="number" name="inputs3" onchange="iputs3fuc()" class="form-control"  placeholder="Enter Length Inchie value...">
+  </div>
+
+  </form>
+</div>
+
+<div class="bg-dark" >
+  <h3 class=" text-white text-center">Height</h3>
+<form >
+   <div class="form-group">
+    <nav class="navbar navbar-light bg-dark mt-3">
+  <span class="navbar-brand mb-0 h1 text-white">Foot Value:</span>
+  </nav>
+  <input id="inputs4" type="number" name="inputs4" onchange="iputs4fuc()"  class="form-control"  placeholder="Enter Height Foot value...">
+  </div>
+
+  <div class="form-group">
+    <nav class="navbar navbar-light bg-dark mt-3">
+  <span class="navbar-brand mb-0 h1 text-white">And Inchie Value:</span>
+  </nav>
+  <input id="inputs5" type="number" name="inputs5" onchange="iputs5fuc()" class="form-control"  placeholder="Enter Height Inchie value...">
+</div>
+</form>
+</div>
+
+
+
+<button type="button" name="button" id="btn" class="btn btn-primary btn-block">Click here to get volume</button>
+
+<div class="bg-dark text-white p-3 border-bottom">
+  <div class="font-weight-bold">Cubic foot</div>
+  <div id="ft3"></div>
+  </div>
+
+<div class="bg-dark text-white p-3 border-bottom">
+  <div class="font-weight-bold">Koya</div>
+  <div id="Koya"></div>
+  </div>
+
+  <div class="bg-dark text-white p-3 border-bottom mb-3">
+    <div class="font-weight-bold">Sotak</div>
+    <div id="Sotak"></div>
+    </div>
+
+</div>
+<script type="text/javascript" src="volume.js">
+</script>
+
+</body>
+</html>
